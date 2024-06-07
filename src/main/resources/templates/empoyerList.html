@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employe List</title>
+    <link href="../static/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" rel="stylesheet"/>
+</head>
+<body>
+ <div class="container">
+     <h1>Employe List</h1>
+     <div>
+         <a href="#">Add Employee</a>|<a href="#">Back to Home</a>
+     </div>
+     <table class="table">
+         <thead>
+         <tr>
+             <th scope="col">ID</th>
+             <th scope="col">designation</th>
+             <th scope="col">Prix</th>
+             <th scope="col">quantité</th>
+             <th scope="col">actions</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr th:each="p:${model}">
+             <td ></td>
+             <td ></td>
+             <td ></td>
+             <td ></td>
+             <td>
+                 <a  class="btn btn-danger">remove</a>
+             </td>
+         </tr>
+         </tbody>
+     </table>
+ </div>
+</body>
+</html>
